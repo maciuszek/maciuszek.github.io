@@ -1,1 +1,1214 @@
-Hello World
+
+<!DOCTYPE html>
+<html class="animated fadeIn cv-fullscreen" lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<script>window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"6387e82dbf","applicationID":"3081130","transactionName":"IV9dR0RcDghRRk4AEBEfQFtZRA==","queueTime":0,"applicationTime":209,"agent":""}</script>
+<script>(window.NREUM||(NREUM={})).loader_config={licenseKey:"6387e82dbf",applicationID:"3081130"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(c(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(5),c=e(6),f=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(e,n){s[n]=i(p+n,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(l+"tracer",[u.now(),e,t],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(l+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?d("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&d("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&d("lcp",[t[t.length-1]])}function o(e){e.getEntries().forEach(function(e){e.hadRecentInput||d("cls",[e])})}function a(e){if(e instanceof m&&!g){var n=Math.round(e.timeStamp),t={type:e.type};n<=p.now()?t.fid=p.now()-n:n>p.offset&&n<=Date.now()?(n-=p.offset,t.fid=p.now()-n):n=p.now(),g=!0,d("timing",["fi",n,t])}}function c(e){d("pageHide",[p.now(),e])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,s,d=e("handle"),p=e("loader"),l=e(4),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){f=new PerformanceObserver(r);try{f.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,y=["click","keydown","mousedown","pointerdown","touchstart"];y.forEach(function(e){document.addEventListener(e,a,!1)})}l(c)}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e){function n(){e(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,n,!1)}n.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],5:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],6:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],7:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?f(e,c,o):o()}function t(t,r,i,o){if(!p.aborted||o){e&&e(t,r,i);for(var a=n(i),c=v(t),f=c.length,u=0;u<f;u++)c[u].apply(a,r);var d=s[w[t]];return d&&d.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return d[e]=d[e]||i(t)}function y(e,n){u(e,function(e,t){n=n||"feature",w[t]=n,n in s||(s[n]=[])})}var h={},w={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:y,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var c="nr@context",f=e("gos"),u=e(5),s={},d={},p=n.exports=i();p.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(w,function(n,t){e[n]||(e[n]=t)});var t=a();f("mark",["onload",t+E.offset],null,"api"),f("timing",["load",t]);var r=l.createElement("script");r.src="https://"+e.agent,n.parentNode.insertBefore(r,n)}}function i(){"complete"===l.readyState&&o()}function o(){f("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(c=Math.max((new Date).getTime(),c))-E.offset}var c=(new Date).getTime(),f=e("handle"),u=e(5),s=e("ee"),d=e(3),p=window,l=p.document,m="addEventListener",v="attachEvent",g=p.XMLHttpRequest,y=g&&g.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:g,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var h=""+location,w={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1177.min.js"},b=g&&y&&y[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:c,now:a,origin:h,features:{},xhrWrappable:b,userAgent:d};e(1),e(2),l[m]?(l[m]("DOMContentLoaded",o,!1),p[m]("load",r,!1)):(l[v]("onreadystatechange",i),p[v]("onload",r)),f("mark",["firstbyte",c],null,"api");var x=0,O=e(7)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(6),a="nr@original",c=Object.prototype.hasOwnProperty,f=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,c,f;try{a=this,r=o(arguments),c="function"==typeof t?t(r,a):t||{}}catch(u){p([u,"",[r,a,i],c])}s(n+"start",[r,a,i],c);try{return f=e.apply(a,r)}catch(d){throw s(n+"err",[r,a,d],c),d}finally{s(n+"end",[r,a,f],c)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,d(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,c,f,u="-"===i.charAt(0);for(f=0;f<n.length;f++)c=n[f],a=e[c],r(a)||(e[c]=t(a,u?c+i:i,o,c))}function s(t,r,i){if(!f||n){var o=f;f=!0;try{e.emit(t,r,i,n)}catch(a){p([a,t,r,i])}f=o}}function d(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){p([r])}for(var i in e)c.call(e,i)&&(n[i]=e[i]);return n}function p(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+
+  <title>Matthew Kuzminski (Out Of Date) - Software Engineer</title>
+
+  <meta name="description" content="Software Engineer - Brantford, Ontario">
+  <meta name="author" content="VisualCV.com">
+
+    <meta name="robots" content="noindex, nofollow">
+
+  <link rel="canonical" href="http://mattkuzminski.com">
+  <link rel="alternate" hreflang="x-default" href="http://mattkuzminski.com"/>
+  <link rel="alternate" hreflang="en" href="http://mattkuzminski.com"/>
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="photo" />
+  <meta name="twitter:site" content="@visualcv" />
+  <meta name="twitter:image" content="https://www.visualcv.com/images/visualcv-resume-templates.jpg" />
+  <meta name="twitter:url" content="https://www.visualcv.com" />
+
+  <!-- Open Graph data -->
+  <meta property="og:image" content="https://www.visualcv.com/images/visualcv-resume-templates.jpg" />
+
+  <!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-WKRGZV"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WKRGZV');</script>
+<!-- End Google Tag Manager -->
+
+  <link rel="stylesheet" type="text/css" href="/app/visualcv.css" />
+</head>
+
+<body data-cv-id="6085527" class="cv-viewer" >
+    <header class="row centered vcv-header">
+      <div class="col-md-6">
+      </div>
+
+      <div class="col-md-6 text-right">
+        <a class="btn btn-outline" id="pdf-download" target="_blank" rel="nofollow" href="/ohpdiwnerjm/pdf/">
+          <img style="height: 16px; width: 16px; vertical-align: text-top" src="/packages/printing_tool-790ab63eb2febfed3a40d73268b946b237a9459d9fbf484f5e8bef14023af2ad.svg" alt="Printing tool" />
+          Download PDF
+</a>      </div>
+    </header>
+
+  <style type="text/css">@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:700&display=swap&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese);
+.css-crop {
+  background-repeat: no-repeat;
+  height: 0;
+  padding-bottom: 50%;
+  width: 100%;
+}
+.css-crop.bg-cover {
+  background-position: center;
+  background-size: cover;
+}
+.css-crop.bg-contain {
+  background-position: center;
+  background-size: contain;
+}
+.clear-margin {
+  margin: 0;
+  padding: 0;
+}
+.full-width {
+  width: 100%;
+}
+.half-width {
+  width: 50%;
+}
+.clickable {
+  cursor: pointer;
+}
+.inline {
+  display: inline;
+}
+.inline-block {
+  display: inline-block !important;
+}
+.nomargin {
+  margin: 0px !important;
+}
+.nowrap {
+  white-space: nowrap;
+}
+.centered {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.first {
+  margin-top: 0px !important;
+}
+.last {
+  margin-bottom: 0px !important;
+}
+.mejs-overlay-button {
+  display: none;
+}
+.cv-viewer p {
+  min-height: 1em;
+}
+.cv-viewer .vcv-header {
+  margin: 0 auto;
+  max-width: 1020px;
+  position: relative;
+  padding: 30px 0;
+}
+.cv-viewer .vcv-header .col-md-6:last-child {
+  padding-right: 0;
+}
+@media (max-width: 992px) {
+  .cv-viewer .vcv-header .col-md-6:last-child {
+    padding-right: 15px;
+  }
+}
+.cv-viewer .vcv-header #social-share {
+  text-align: right;
+  position: absolute;
+  left: -80px;
+  top: 80px;
+  z-index: 1050;
+  opacity: 0;
+}
+.cv-viewer .vcv-header #social-share .share-button {
+  min-height: 30px;
+}
+.cv-viewer .vcv-header #social-share .share-button.subtle {
+  opacity: 0.75;
+}
+.cv-viewer .vcv-header .banner-top {
+  padding-left: 90px;
+  position: relative;
+  margin-top: -10px;
+  margin-bottom: -30px;
+  z-index: 0;
+  opacity: 0.5;
+  display: inline-block;
+}
+.cv-viewer .vcv-header .banner-top:hover {
+  opacity: 0.8;
+  -webkit-transition-property: transform opacity;
+  -moz-transition-property: transform opacity;
+  transition-property: transform opacity;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.cv-viewer .vcv-logo {
+  display: block;
+  height: 40px;
+  padding: 5px 0;
+}
+.cv-viewer article .empty {
+  display: none !important;
+}
+.cv-viewer footer.vcv-footer {
+  margin-top: 100px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+.cv-viewer footer.vcv-footer p {
+  margin: 0;
+}
+.cv-viewer footer .updated-at {
+  color: #333;
+  opacity: 0.5;
+}
+.cv-fullscreen {
+  position: relative;
+}
+.cv-fullscreen .vcv-header {
+  display: none;
+}
+.cv-fullscreen .vcv-footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  color: white;
+  margin-top: 50px;
+}
+.cv-fullscreen .vcv-footer .updated-at {
+  display: block;
+  margin-bottom: 1em;
+  opacity: 0.75;
+}
+.editor-visible {
+  display: none;
+}
+.cv-editor .cv-container {
+  margin: 0 auto 200px auto;
+}
+.cv-editor .cv-container .editor-visible {
+  display: block;
+}
+.asset label {
+  text-align: center;
+  display: block;
+}
+.asset label > span {
+  display: block;
+  width: 100%;
+}
+.asset label > span > span {
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  display: block;
+  width: 100% !important;
+}
+body {
+  background-color: #eee;
+}
+.cv-container,
+.cv-content {
+  opacity: 1 !important;
+}
+.cv-container {
+  background-color: #ffffff;
+  border-radius: 1px;
+  font-family: "Montserrat", "Century Gothic", CenturyGothic, "Microsoft YaHei New", "Microsoft Yahei", "微软雅黑", 宋体, SimSun, 华文细黑, STXihei, 黑体, SimHei, sans-serif;
+  font-size: 18px;
+  display: block;
+  margin: 0 auto 10px;
+  min-height: 500px;
+  max-width: 1020px;
+}
+.cv-container .nowrap-list li {
+  white-space: nowrap;
+}
+.cv-container section {
+  position: relative;
+  word-wrap: break-word;
+}
+.cv-container section .date-range [data-bind=start_date] span,
+.cv-container section .date-range [data-bind=end_date] span {
+  white-space: nowrap;
+}
+.cv-container section .date-range [data-bind=end_date]:before {
+  content: ' - ';
+}
+.cv-container article:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.cv-container .main section:first-child .edit-section .sort-up,
+.cv-container .cv-content section:first-child .edit-section .sort-up {
+  display: none;
+}
+.cv-container .main section:last-of-type .edit-section .sort-down,
+.cv-container .cv-content section:last-of-type .edit-section .sort-down {
+  display: none;
+}
+.cv-container #profile .edit-section {
+  display: none;
+}
+.cv-container #references .date-range {
+  display: none !important;
+}
+.cv-container #references .article-body {
+  width: 100%;
+}
+.cv-container svg {
+  overflow: visible;
+}
+.cv-container table {
+  width: 100%;
+}
+.cv-container .morris-hover {
+  display: none !important;
+}
+.cv-container input[type='month'] {
+  position: relative;
+  border: none;
+  max-width: 100%;
+  content: attr(placeholder);
+  display: inline-block;
+}
+.cv-container input[type='month']:before {
+  content: attr(placeholder);
+  position: absolute;
+}
+.cv-container .gallery .asset-thumb {
+  display: block;
+}
+.cv-container .btn {
+  margin-bottom: 15px;
+}
+.cv-container .btn i.subtle {
+  opacity: 0.2;
+}
+.cv-container .btn i {
+  opacity: 0.5;
+}
+.cv-container .btn.btn-glass {
+  background-color: rgba(255, 255, 255, 0.15);
+  -webkit-box-shadow: 0 3px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.7);
+}
+.cv-container a,
+.cv-container [data-bind=email],
+.cv-container a[data-bind=organization_url] h5 {
+  color: #5186cf;
+}
+.cv-container [data-bind=organization_url] {
+  display: block;
+}
+.cv-container .add-section {
+  max-width: 850px;
+  margin: 0px auto 60px;
+}
+.cv-container .cv-content:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.cv-container .cv-content .user-thumb {
+  display: none;
+}
+.cv-container .cv-content .user-thumb.visible {
+  display: inherit;
+}
+.cv-container .asset-thumb {
+  cursor: pointer;
+  display: block;
+  position: relative;
+}
+.cv-container .asset-thumb .asset-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 15%;
+  z-index: 100;
+  opacity: 0.5;
+}
+.cv-container .asset-thumb .asset-overlay:hover {
+  opacity: 0.75;
+}
+.cv-container .asset-thumb .asset-overlay.youtube {
+  background-image: url('/images/icons/play.png');
+}
+.cv-container .asset-thumb .asset-overlay img {
+  page-break-inside: avoid;
+}
+.cv-container .contact_me .description {
+  margin-bottom: 20px;
+}
+.cv-container .contact_me .input-group {
+  font-family: "Montserrat", "Century Gothic", CenturyGothic, "Microsoft YaHei New", "Microsoft Yahei", "微软雅黑", 宋体, SimSun, 华文细黑, STXihei, 黑体, SimHei, sans-serif;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.cv-container .contact_me .input-group.cv_slug-field {
+  margin-bottom: 0;
+}
+.cv-container .contact_me label,
+.cv-container .contact_me input,
+.cv-container .contact_me button,
+.cv-container .contact_me textarea {
+  font-weight: 300;
+  line-height: normal;
+}
+.cv-container .contact_me label {
+  display: block;
+  margin-bottom: 4px;
+  text-transform: none;
+}
+.cv-container .contact_me input[type='text'],
+.cv-container .contact_me input[type='email'],
+.cv-container .contact_me textarea {
+  width: 400px;
+  max-width: 100%;
+}
+.cv-container .contact_me input[type='text'],
+.cv-container .contact_me input[type='email'],
+.cv-container .contact_me textarea,
+.cv-container .contact_me button[type='submit'] {
+  border-radius: 0;
+  text-transform: none;
+  transition: 0.2s;
+}
+.cv-container .contact_me .subject-field input {
+  width: 500px;
+}
+.cv-container .contact_me textarea {
+  width: 500px;
+  height: 200px !important;
+  margin-bottom: 0;
+}
+.cv-container .contact_me .success-message {
+  display: none;
+}
+@media (max-width: 992px) {
+  #social-share {
+    display: none;
+  }
+  .vcv-header .col-md-6:last-child {
+    padding-right: inherit;
+  }
+  .vcv-header a {
+    display: block;
+    margin-bottom: 15px;
+  }
+  .vcv-header .vcv-logo {
+    display: inline;
+  }
+  .vcv-header .btn {
+    width: 100%;
+  }
+}
+.pdf body {
+  background-color: #ffffff;
+}
+.pdf .cv-container {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: none;
+  margin-bottom: 0;
+  max-width: 100%;
+  padding: 0;
+}
+.pdf .cv-container a {
+  text-decoration: none;
+  transition: none;
+}
+.pdf .cv-container .main,
+.pdf .cv-container section:last-of-type,
+.pdf .cv-container section:last-of-type article:last-of-type,
+.pdf .cv-container section:last-of-type article:last-of-type > *:last-child,
+.pdf .cv-container section:last-of-type article:last-of-type .mce-content-body > *:last-child,
+.pdf .cv-container section:last-of-type article:last-of-type .mce-content-body li:last-child > *:last-child,
+.pdf .cv-container .content-container,
+.pdf .cv-container .cv-content {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+.pdf .cv-container .cv-content,
+.pdf .cv-container .main > *:last-child,
+.pdf .cv-container .sidebar > *:last-child {
+  page-break-after: always;
+}
+.pdf.branded .cv-container .cv-content,
+.pdf.branded .cv-container .main > *:last-child,
+.pdf.branded .cv-container .sidebar > *:last-child {
+  page-break-after: auto;
+}
+.pdf.branded .cv-container .branding {
+  page-break-after: always;
+}
+.pdf .vcv-header,
+.pdf .vcv-footer {
+  display: none;
+}
+.pdf header,
+.pdf .header-text {
+  page-break-after: avoid;
+  page-break-inside: avoid;
+}
+.pdf .no-page-break,
+.pdf .css-crop,
+.pdf pre,
+.pdf blockquote,
+.pdf img,
+.pdf svg,
+.pdf .chart-graph,
+.pdf .chart-container,
+.pdf .asset {
+  page-break-inside: avoid;
+}
+.pdf .no-page-break p {
+  page-break-inside: avoid;
+}
+.pdf .page-break {
+  page-break-before: always;
+}
+.pdf thead {
+  display: table-header-group;
+}
+.pdf p {
+  orphans: 4;
+  widows: 4;
+}
+.pdf .cv-container .chart-container {
+  width: 850px;
+}
+.pdf .cv-container .portfolio .css-crop {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.pdf .cv-container .user-thumb {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.pdf .cv-container .branding span {
+  opacity: 1;
+}
+.pdf .cv-container .asset-thumb .asset-overlay.youtube {
+  display: none;
+}
+.pdf .contact_me {
+  display: none;
+}
+@page {
+  size: A4 portrait;
+}
+.cv-editor .cv-container {
+  max-width: 97% !important;
+}
+.cv-container {
+  color: #333333;
+  font-weight: 300;
+  margin: 0 auto;
+  max-width: initial;
+  padding: 0 0 5em;
+  width: 100%;
+}
+.cv-container a,
+.cv-container [data-bind=email] span,
+.cv-container a[data-bind=organization_url] span {
+  color: #5186cf;
+}
+.cv-container a:hover,
+.cv-container [data-bind=email] span:hover,
+.cv-container a[data-bind=organization_url] span:hover {
+  text-decoration: underline;
+}
+.cv-container h1,
+.cv-container h2,
+.cv-container h3,
+.cv-container h4,
+.cv-container h5 {
+  font-family: "Playfair Display", "Microsoft YaHei New", "Microsoft Yahei", "微软雅黑", 宋体, SimSun, 华文细黑, STXihei, 黑体, SimHei, serif;
+  letter-spacing: 1px;
+  margin: 0;
+}
+.cv-container h1 {
+  font-size: 194%;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.15);
+  width: 30%;
+}
+.cv-container h2 {
+  font-size: 266%;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.15);
+  margin-top: 150px;
+  width: 50%;
+}
+.cv-container h3 {
+  color: #b78742;
+  font-size: 183%;
+  line-height: 110%;
+}
+.cv-container h4 {
+  font-family: "Montserrat", "Century Gothic", CenturyGothic, "Microsoft YaHei New", "Microsoft Yahei", "微软雅黑", 宋体, SimSun, 华文细黑, STXihei, 黑体, SimHei, sans-serif;
+  font-size: 111%;
+  font-weight: normal;
+}
+.cv-container h4[data-bind=organization] {
+  font-size: 83.3%;
+  margin-bottom: 0.52em;
+}
+.cv-container h5 {
+  color: #888888;
+  font-family: "Montserrat", "Century Gothic", CenturyGothic, "Microsoft YaHei New", "Microsoft Yahei", "微软雅黑", 宋体, SimSun, 华文细黑, STXihei, 黑体, SimHei, sans-serif;
+  font-size: 83.3%;
+  font-weight: normal;
+}
+.cv-container p {
+  min-height: auto;
+}
+.cv-container .cv-content:after,
+.cv-container article:after {
+  display: none;
+}
+.cv-container .banner {
+  background-color: #AAA;
+  background-image: url(https://splashbase.s3.amazonaws.com/unsplash/regular/tumblr_mnh0n9pHJW1st5lhmo1_1280.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 0%;
+  color: white;
+  min-height: 600px;
+}
+.cv-container .banner .content-container {
+  max-width: 1240px;
+  position: relative;
+  padding: 40px 30px;
+}
+.cv-container .banner .menu {
+  position: absolute;
+  right: 15px;
+  top: 40px;
+  width: 65%;
+}
+.cv-container .banner a {
+  color: white;
+}
+.cv-container .content-container {
+  margin: 0 auto;
+}
+.cv-container .navbar-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: flex-end;
+  -ms-flex-pack: flex-end;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+  -moz-justify-content: flex-end;
+  justify-content: flex-end;
+  text-align: right;
+}
+.cv-container .navbar-nav li {
+  margin: 13px 3px;
+}
+.cv-container .navbar-nav li a {
+  border: 1px solid transparent;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.3);
+  padding: 7px 15px;
+}
+.cv-container .navbar-nav li a:hover,
+.cv-container .navbar-nav li a:focus {
+  background-color: rgba(183, 135, 66, 0.08);
+  border-color: white;
+  text-decoration: none;
+}
+.cv-container .main-content .content-container {
+  padding-top: 0;
+}
+.cv-container .main-content .profile {
+  background-color: #f0f0f0;
+  margin-bottom: 4em;
+}
+.cv-container .main-content .profile article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 40px 30px;
+}
+.cv-container .main-content .profile ul {
+  text-align: left;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1 1 auto;
+  -webkit-flex: 1 1 auto;
+  -moz-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  min-width: 250px;
+  padding: 0;
+}
+.cv-container .main-content .profile ul li {
+  display: block;
+  line-height: 180%;
+}
+.cv-container .main-content .profile ul li:before {
+  color: rgba(0, 0, 0, 0.5);
+  font-family: FontAwesome;
+  font-size: 100%;
+  text-align: center;
+  display: inline-block;
+  margin: 0 0.5em 0 0;
+  vertical-align: baseline;
+  width: 1em;
+}
+.cv-container .main-content .profile ul li.adr:before {
+  content: '\f041';
+}
+.cv-container .main-content .profile ul li.phone:before {
+  content: '\f095';
+}
+.cv-container .main-content .profile ul li.email:before {
+  content: '\f003';
+}
+.cv-container .main-content .profile ul i {
+  color: rgba(0, 0, 0, 0.5);
+  margin-right: 0.3em;
+}
+.cv-container .main-content .profile .user-contact {
+  width: 33.33333333%;
+}
+.cv-container .main-content .profile .user-links {
+  width: 66.66666666%;
+}
+.cv-container section[data-bind=sections] {
+  max-width: 1240px;
+  margin: 0 auto 4em;
+  padding: 0 30px;
+}
+.cv-container section[data-bind=sections] header {
+  margin-bottom: 1.41em;
+}
+.cv-container section[data-bind=sections] article {
+  line-height: 160%;
+}
+.cv-container .dated_story article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-bottom: 2.21em;
+}
+.cv-container .dated_story article:last-child {
+  margin-bottom: 0;
+}
+.cv-container .dated_story h5 {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1 1 auto;
+  -webkit-flex: 1 1 auto;
+  -moz-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  width: 33.33333333%;
+}
+.cv-container .dated_story .article-body {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1 1 auto;
+  -webkit-flex: 1 1 auto;
+  -moz-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  width: 66.66666666%;
+}
+.cv-container .dated_story .mce-content-body {
+  color: #888888;
+  font-size: 77.8%;
+}
+.cv-container .text_story,
+.cv-container .chart,
+.cv-container .contact_me {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.cv-container .text_story header,
+.cv-container .chart header,
+.cv-container .contact_me header {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1 1 auto;
+  -webkit-flex: 1 1 auto;
+  -moz-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  width: 33.33333333%;
+}
+.cv-container .text_story article,
+.cv-container .chart article,
+.cv-container .contact_me article {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1 1 auto;
+  -webkit-flex: 1 1 auto;
+  -moz-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  width: 66.66666666%;
+}
+.cv-container .chart article p {
+  color: #333333;
+  font-size: 18px;
+}
+.cv-container .gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: -15px -0.8%;
+}
+.cv-container .gallery .asset {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1 1 auto;
+  -webkit-flex: 1 1 auto;
+  -moz-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  margin: 15px 0.8%;
+  max-width: 23%;
+  width: 23%;
+}
+.cv-container .gallery .asset:hover .css-crop {
+  -webkit-filter: grayscale(60%);
+  filter: grayscale(60%);
+}
+.cv-container .gallery .asset .asset-overlay {
+  background-size: 12%;
+}
+.cv-container .gallery .asset a {
+  text-decoration: none;
+}
+.cv-container .gallery .asset a:hover label {
+  text-decoration: underline;
+}
+.cv-container .gallery .asset label {
+  font-size: 18px;
+  line-height: 140%;
+  margin-top: 10px;
+}
+.cv-container .gallery .asset p {
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  color: #888888;
+  font-size: 72%;
+  line-height: 140%;
+  text-align: center;
+}
+.cv-container .gallery .css-crop {
+  transition: all 0.6s ease;
+  padding-bottom: 80%;
+}
+.cv-container .skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 -12px;
+}
+.cv-container .skills .competency {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
+  -webkit-flex-wrap: nowrap;
+  -moz-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  -ms-flex-wrap: none;
+  flex-wrap: nowrap;
+  margin-bottom: 1.3em;
+}
+.cv-container .skills .competency:after {
+  display: none;
+}
+.cv-container .skills .competency .competency-dial {
+  -webkit-box-flex: none;
+  -moz-box-flex: none;
+  -webkit-flex: none;
+  -moz-flex: none;
+  -ms-flex: none;
+  flex: none;
+  height: 80px;
+  margin-right: 15px;
+  position: relative;
+  width: 80px;
+}
+.cv-container .skills .competency .competency-dial svg {
+  height: 80px;
+  width: 80px;
+}
+.cv-container .skills .competency .competency-dial circle:first-child {
+  fill: #b78742;
+  opacity: 0.2;
+}
+.cv-container .skills .competency .competency-dial path {
+  fill: #b78742;
+}
+.cv-container .skills .competency .competency-dial circle:last-child {
+  fill: #ffffff;
+  stroke-width: 20px;
+  stroke: #ffffff;
+}
+.cv-container .skills .competency .competency-level {
+  font-size: 125%;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -moz-transform-origin: translate(-50%, -50%);
+  -o-transform-origin: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.cv-container .skills .competency .competency-description {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1 4 60%;
+  -webkit-flex: 1 4 60%;
+  -moz-flex: 1 4 60%;
+  -ms-flex: 1 4 60%;
+  flex: 1 4 60%;
+}
+.cv-container .skills .competency p {
+  line-height: 120%;
+  margin: 0;
+}
+.cv-container .skills .competency {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1 1 auto;
+  -webkit-flex: 1 1 auto;
+  -moz-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  margin: 0 12px 1.31em;
+  max-width: 30%;
+  width: 30%;
+}
+.cv-container .skills .competency .competency-dial {
+  margin-right: 25px;
+}
+.cv-container .skills .competency .competency-dial circle:first-child {
+  fill: rgba(183, 135, 66, 0.25);
+}
+.cv-container .skills .competency .competency-dial circle:last-child {
+  stroke-width: 27px;
+}
+.cv-container .skills .competency .competency-level {
+  color: #b78742;
+}
+.cv-container .skills .competency h4 {
+  font-size: 18px;
+  line-height: 110%;
+  letter-spacing: 0;
+  margin-bottom: 5px;
+}
+.cv-container .skills .competency .mce-content-body {
+  color: #888888;
+  font-size: 77.8%;
+  line-height: 150%;
+}
+.cv-container .skills .competency p {
+  line-height: 150%;
+}
+.cv-container .contact_me .description,
+.cv-container .contact_me .success-message {
+  margin-top: 7px;
+  margin-bottom: 30px;
+}
+.cv-container .contact_me .input-group {
+  margin-bottom: 30px;
+}
+.cv-container .contact_me label,
+.cv-container .contact_me input,
+.cv-container .contact_me button,
+.cv-container .contact_me textarea {
+  font-family: "Montserrat", "Century Gothic", CenturyGothic, "Microsoft YaHei New", "Microsoft Yahei", "微软雅黑", 宋体, SimSun, 华文细黑, STXihei, 黑体, SimHei, sans-serif;
+  font-size: 83.3%;
+}
+.cv-container .contact_me label {
+  color: ligthen(#333333, 15%);
+  font-size: 77.8%;
+}
+.cv-container .contact_me input[type='text'],
+.cv-container .contact_me input[type='email'],
+.cv-container .contact_me textarea {
+  background-color: #ffffff;
+  border: 1px solid #b78742;
+  padding: 10px 13px;
+}
+.cv-container .contact_me input[type='text']:focus,
+.cv-container .contact_me input[type='email']:focus,
+.cv-container .contact_me textarea:focus,
+.cv-container .contact_me input[type='text']:active,
+.cv-container .contact_me input[type='email']:active,
+.cv-container .contact_me textarea:active {
+  border-color: #dcad6a;
+  box-shadow: 0 0 4px #dcad6a;
+}
+.cv-container .contact_me button[type='submit'] {
+  background-color: #ac7f3e;
+  border: 1px solid #7f5e2e;
+  color: white;
+  font-size: 88.9%;
+  font-weight: 400;
+  padding: 12px 30px;
+  margin-top: -15px;
+}
+.cv-container .contact_me button[type='submit']:hover,
+.cv-container .contact_me button[type='submit']:focus {
+  background-color: #b78742;
+  border-color: #a4793b;
+  box-shadow: 0 0 4px #dcad6a;
+}
+.cv-container .contact_me button[type='submit'][disabled] {
+  background-color: #c79f65;
+  border-color: #b78742;
+  color: #f0f0f0;
+}
+@media (max-width: 992px) {
+  .cv-container .main-content .profile {
+    margin-bottom: 2em;
+  }
+  .cv-container .main-content .profile article {
+    padding: 25px 20px 15px;
+  }
+  .cv-container .main-content .profile .user-contact,
+  .cv-container .main-content .profile .user-links {
+    width: 50%;
+  }
+  .cv-container section[data-bind=sections] {
+    padding: 0 20px;
+    margin-bottom: 2em;
+  }
+  .cv-container section[data-bind=sections] header {
+    margin-bottom: 0.95em;
+  }
+  .cv-container .skills .competency {
+    max-width: 44%;
+    width: 44%;
+  }
+}
+@media (max-width: 768px) {
+  .cv-container h1 {
+    font-size: 150%;
+    width: 45%;
+  }
+  .cv-container h2 {
+    font-size: 194%;
+    text-align: center;
+    margin-top: 340px;
+    width: 90%;
+  }
+  .cv-container h3 {
+    font-size: 144%;
+  }
+  .cv-container .banner .content-container {
+    padding: 25px 20px 15px;
+  }
+  .cv-container .banner .menu {
+    font-size: 88.9%;
+    max-width: 54%;
+    right: 25px;
+    top: 23px;
+    width: auto;
+  }
+  .cv-container .banner .menu li {
+    width: 100%;
+  }
+  .cv-container .dated_story article {
+    margin-bottom: 1.3em;
+  }
+  .cv-container .dated_story h5,
+  .cv-container .dated_story .article-body {
+    width: 100%;
+  }
+  .cv-container .text_story header,
+  .cv-container .chart header,
+  .cv-container .contact_me header,
+  .cv-container .text_story article,
+  .cv-container .chart article,
+  .cv-container .contact_me article {
+    width: 100%;
+  }
+  .cv-container .text_story article,
+  .cv-container .chart article,
+  .cv-container .contact_me article {
+    font-size: 83%;
+  }
+  .cv-container .gallery {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+  .cv-container .gallery .asset {
+    margin: 15px 12px 5px;
+    max-width: 44%;
+    width: 44%;
+  }
+  .cv-container .gallery .asset label {
+    margin-top: 6px;
+  }
+  .cv-container .skills .competency {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .cv-container .gallery .asset {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+</style><div><div class="sc-fzoant hXtGXC cv-container"><div class="cv-content"><div class="banner parallax"><div class="content-container"><section id="profile" class="profile"><article data-bind="content" class=""><div class="user-title"><h1 class="full-name" data-bind="full_name"><span class="sc-fzoKki kNKLJw"><span contenteditable="false" class="sc-fzpkJw fyKtHJ">Matthew Kuzminski (Out Of Date)</span></span></h1><h2 class="title" data-bind="headline"><span class="sc-fzoKki kNKLJw"><span contenteditable="false" class="sc-fzpkJw fyKtHJ">Software Engineer</span></span></h2></div></article></section><div data-bind="menu" class="menu"><ul class="nav navbar-nav"><li data-scroll-to="#text_story_McKXSRhNAJ"><a href="javacript:void(0);">Career Objectives</a></li><li data-scroll-to="#strengths"><a href="javacript:void(0);">Skills</a></li><li data-scroll-to="#positions"><a href="javacript:void(0);">Work experience</a></li><li data-scroll-to="#summary"><a href="javacript:void(0);">Summary</a></li><li data-scroll-to="#degrees"><a href="javacript:void(0);">Education</a></li><li data-scroll-to="#text_story"><a href="javacript:void(0);">References</a></li></ul></div></div></div><div class="main-content"><div class="content-container"><section data-bind="profile_sidebar" id="profile" class="profile"><article data-bind="content" class=""><ul class="user-contact"><li class="adr locality" data-bind="location"><span class="sc-fzoKki kNKLJw"><span contenteditable="false" class="sc-fzpkJw fyKtHJ">Toronto, Ontario</span></span></li><li class="phone" data-bind="phone"><span class="sc-fzoKki kNKLJw"><span contenteditable="false" class="sc-fzpkJw fyKtHJ">416-XXX-XXXX</span></span></li><li class="email" data-bind="email"><a href="/cdn-cgi/l/email-protection#4f222e3b3b243a352226213c24260f28222e2623612c2022"><span class="__cf_email__" data-cfemail="036e6277776876796e6a6d70686a43646e626a6f2d606c6e">[email&#160;protected]</span></a></li></ul><ul class="user-links user-websites" data-bind="websites"><li class="website"><a href="http://www.linkedin.com/in/matthew-kuzminski-0b4a84ab" target="_blank" rel="noopener noreferrer nofollow"><i class="fa fa-fw fa-linkedin"></i>www.linkedin.com/in/matthew-kuzminski-0b4a84ab</a></li><li class="website"><a href="https://github.com/maciuszek" target="_blank" rel="noopener noreferrer nofollow"><i class="fa fa-fw fa-github"></i>github.com/maciuszek</a></li></ul></article></section><section data-bind="sections" id="text_story_McKXSRhNAJ" class="text_story"><header><h3 class="header-text" data-bind="label"><span class="sc-fzoKki kNKLJw"><span contenteditable="false" class="sc-fzpkJw fyKtHJ">Career Objectives</span></span></h3></header><article data-bind="content" class=""><div class="sc-fzqBkg hiUwEp"><div class="mce-content-body"><p>Software development is my passion. Facilitating the creation of new applications and technology is something I greatly pride myself in, both professionally and as a continued hobby. A constant development of my skillsets is something I dedicate most of my time to and pride myself in.<span> This has led to deployment of interesting and meaningful commercial products, within the organizations I have belonged to.</span></p>
+<p>In the rapid growth, natural to the software development world, I am always searching out for possibilities to further my learning and mastery. This it provides me with larger and contemporary toolkit for which I can create novel and valuable software. I have made it my prerogative to be exposed to the latest and greatest technologies, and if beneficial, be part of their implementation and integration.</p>
+<p><span>When I am not developing some sort of software, I enjoy staying up to date on the state-of-the-art technologies and contributing to community discussions regarding to my craft. For those who are interested to learn more about my portfolio, I am eager to present my accomplishments during my professional and personal career.</span></p></div></div></article></section><section data-bind="sections" id="strengths" class="strengths"><header><h3 class="header-text" data-bind="label"><span class="sc-fzoKki kNKLJw"><span contenteditable="false" class="sc-fzpkJw fyKtHJ">Skills</span></span></h3></header><div class="skills"><article data-bind="contents" class="article-body competency "><div class="competency-dial" data-competency="85"><div class="competency-level">0</div><svg viewBox="0 0 60 60"><circle cx="30" cy="30" r="30"></circle><path d="M 30,30 L 30,0 A 30,30 0 0 1 29.970000005,0.000014999998750653276 Z"></path><circle cx="30" cy="30" r="15"></circle></svg></div><div class="competency-description"><h4 data-bind="name"><span class="sc-fzoKki kNKLJw"><span contenteditable="false" class="sc-fzpkJw fyKtHJ">Operating Systems</span></span></h4><div class="sc-fzqBkg hiUwEp"><div class="mce-content-body"><p>GNU/Linux (Have used all the major parents at one point or another, starting from Knoppix in the early 2000s to Arch Linux under systemd now. Been everywhere even with&nbsp;obscure things like NixOS, Qubes and the like), The Mainline BSD Unix Flavors, Windows 3.5-10, OS X</p></div></div></div></article><article data-bind="contents" class="article-body competency "><div class="competency-dial" data-competency="85"><div class="competency-level">0</div><svg viewBox="0 0 60 60"><circle cx="30" cy="30" r="30"></circle><path d="M 30,30 L 30,0 A 30,30 0 0 1 29.970000005,0.000014999998750653276 Z"></path><circle cx="30" cy="30" r="15"></circle></svg></div><div class="competency-description"><h4 data-bind="name"><span class="sc-fzoKki kNKLJw"><span contenteditable="false" class="sc-fzpkJw fyKtHJ">Databases</span></span></h4><div class="sc-fzqBkg hiUwEp"><div class="mce-content-body"><p>Oracle, Postgres, SQlite, MairaDB/mysql, SQL Server, MonogoDB (A bit when exploring the MEAN Stack)</p></div></div></div></article><article data-bind="contents" class="article-body competency "><div class="competency-dial" data-competency="85"><div class="competency-level">0</div><svg viewBox="0 0 60 60"><circle cx="30" cy="30" r="30"></circle><path d="M 30,30 L 30,0 A 30,30 0 0 1 29.970000005,0.000014999998750653276 Z"></path><circle cx="30" cy="30" r="15"></circle></svg></div><div class="competency-description"><h4 data-bind="name"><span class="sc-fzoKki kNKLJw"><span contenteditable="false" class="sc-fzpkJw fyKtHJ">General Programming Languages</span></span></h4><div class="sc-fzqBkg hiUwEp"><div class="mce-content-body"><p>Java, Go, C, C++, Perl, Ruby, Python, C#, VB</p></div></div></div></article><article data-bind="contents" class="article-body competency "><div class="competency-dial" data-competency="85"><div class="competency-level">0</div><svg viewBox="0 0 60 60"><circle cx="30" cy="30" r="30"></circle><path d="M 30,30 L 30,0 A 30,30 0 0 1 29.970000005,0.000014999998750653276 Z"></path><circle cx="30" cy="30" r="15"></circle></svg></div><div class="competency-description"><h4 data-bind="name"><span class="sc-fzoKki kNKLJw"><span contenteditable="false" class="sc-fzpkJw fyKtHJ">Development Frameworks and Platforms</span></span></h4><div class="sc-fzqBkg hiUwEp"><div class="mce-content-body"><p><span>Spring, Hibernate, Maven, GNU Toolchain, .Net 3.5-4.5</span></p></div></div></div></article><article data-bind="contents" class="article-body competency "><div class="competency-dial" data-competency="85"><div class="competency-level">0</div><svg viewBox="0 0 60 60"><circle cx="30" cy="30" r="30"></circle><path d="M 30,30 L 30,0 A 30,30 0 0 1 29.970000005,0.000014999998750653276 Z"></path><circle cx="30" cy="30" r="15"></circle></svg></div><div class="competency-description"><h4 data-bind="name"><span class="sc-fzoKki kNKLJw"><span contenteditable="false" class="sc-fzpkJw fyKtHJ">Web Development</span></span></h4><div class="sc-fzqBkg hiUwEp"><div class="mce-content-body"><p>Angular, Velocity, JS (exposed many of the major libraries, frameworks and development paradigms), HTML, ^X(M|S)+L(T)*$, CSS/SASS, Polymer</p></div></div></div></article><article data-bind="contents" class="article-body competency "><div class="competency-dial" data-competency="85"><div class="competency-level">0</div><svg viewBox="0 0 60 60"><circle cx="30" cy="30" r="30"></circle><path d="M 30,30 L 30,0 A 30,30 0 0 1 29.970000005,0.000014999998750653276 Z"></path><circle cx="30" cy="30" r="15"></circle></svg></div><div class="competency-description"><h4 data-bind="name"><span class="sc-fzoKki kNKLJw"><span contenteditable="false" class="sc-fzpkJw fyKtHJ">Source Control Management</span></span></h4><div class="sc-fzqBkg hiUwEp"><div class="mce-content-body"><p>Git, CVS, Subversion, Bazaar, Mercurial, Team Foundation Server</p></div></div></div></article><article data-bind="contents" class="article-body competency "><div class="competency-dial" data-competency="85"><div class="competency-level">0</div><svg viewBox="0 0 60 60"><circle cx="30" cy="30" r="30"></circle><path d="M 30,30 L 30,0 A 30,30 0 0 1 29.970000005,0.000014999998750653276 Z"></path><circle cx="30" cy="30" r="15"></circle></svg></div><div class="competency-description"><h4 data-bind="name"><span class="sc-fzoKki kNKLJw"><span contenteditable="false" class="sc-fzpkJw fyKtHJ">Development Environments</span></span></h4><div class="sc-fzqBkg hiUwEp"><div class="mce-content-body"><p>Sublime Text, Brackets, VSCode, InteliJ IDEA, Eclipse, Visual Studio</p></div></div></div></article><article data-bind="contents" class="article-body competency "><div class="competency-dial" data-competency="85"><div class="competency-level">0</div><svg viewBox="0 0 60 60"><circle cx="30" cy="30" r="30"></circle><path d="M 30,30 L 30,0 A 30,30 0 0 1 29.970000005,0.000014999998750653276 Z"></path><circle cx="30" cy="30" r="15"></circle></svg></div><div class="competency-description"><h4 data-bind="name"><span class="sc-fzoKki kNKLJw"><span contenteditable="false" class="sc-fzpkJw fyKtHJ">Testing Tools</span></span></h4><div class="sc-fzqBkg hiUwEp"><div class="mce-content-body"><p>Jasmine, Protractor, Selenium, Valgrind, gdb, Bugzilla, JMeter</p></div></div></div></article><article data-bind="contents" class="article-body competency "><div class="competency-dial" data-competency="85"><div class="competency-level">0</div><svg viewBox="0 0 60 60"><circle cx="30" cy="30" r="30"></circle><path d="M 30,30 L 30,0 A 30,30 0 0 1 29.970000005,0.000014999998750653276 Z"></path><circle cx="30" cy="30" r="15"></circle></svg></div><div class="competency-description"><h4 data-bind="name"><span class="sc-fzoKki kNKLJw"><span contenteditable="false" class="sc-fzpkJw fyKtHJ">Project Management Tools</span></span></h4><div class="sc-fzqBkg hiUwEp"><div class="mce-content-body"><p>Trello, Confluence, JIRA</p></div></div></div></article></div></section><section data-bind="sections" id="positions" class="dated_story"><header><h3 class="header-text empty" data-bind="label"><span class="sc-fzoKki kNKLJw"><span contenteditable="false" class="sc-fzpkJw fyKtHJ">Work experience</span></span></h3></header><article data-bind="contents" class=""><h5 class="date-range"><span data-bind="start_date"><span class="sc-fzoKki kNKLJw"><span contenteditable="false" class="sc-fzpkJw fyKtHJ">2017</span></span></span><span data-bind="end_date"><span class="sc-fzoKki kNKLJw"><span contenteditable="false" class="sc-fzpkJw fyKtHJ">Present</span></span></span></h5><div class="article-body"><h4 data-bind="title"><span class="sc-fzoKki kNKLJw"><span contenteditable="false" class="sc-fzpkJw fyKtHJ">Software Engineer</span></span></h4><a data-bind="organization_url" target="_blank" rel="noopener nofollow" href="http://www.triyosoft.com"><h4 data-bind="organization"><span class="sc-fzoKki kNKLJw"><span contenteditable="false" class="sc-fzpkJw fyKtHJ">Debut Logic Inc. - Triyosoft</span></span></h4></a><div class="sc-fzqBkg hiUwEp"><div class="mce-content-body"><p><strong>The first instance of Triyo was under Readyportal</strong>, and this made as good platform to build the basic prototype, although this was the extent of it. With the growth of the project, all the necessary enhancements and improvements couldn&rsquo;t keep up with demand, without risking the Readyportal stability (being a multi-tenant engine and system). This provided an incredibly tedious development cycle for any expansion, having to invest a gross amount of time in planning for regression.</p>
+<p>From the get go Readyportal was/is a multi-tenant engine that servers portals to organizations, the need of having it interface with a side- services solution/micro-service stacks on behalf of one tenant/subcluster would have went against the engines principles.</p>
+<p>It was decided to redevelop the product Triyo under a new engine/platform that would suite the needs of interfacing with Microsoft data as well as possible, so my work here was mainly in the port over&nbsp; from the <strong>Triyo Implementation on a Java Based Readyportal (BIP) Platforms to a Sole .Net Implementation </strong>( later to be a multi-tenant solution itself ).</p></div></div></div></article><article data-bind="contents" class=""><h5 class="date-range"><span data-bind="start_date"><span class="sc-fzoKki kNKLJw"><span contenteditable="false" class="sc-fzpkJw fyKtHJ">2015</span></span></span><span data-bind="end_date"><span class="sc-fzoKki kNKLJw"><span contenteditable="false" class="sc-fzpkJw fyKtHJ">Present</span></span></span></h5><div class="article-body"><h4 data-bind="title"><span class="sc-fzoKki kNKLJw"><span contenteditable="false" class="sc-fzpkJw fyKtHJ">Lead Software Engineer and Director of Operations</span></span></h4><a data-bind="organization_url" target="_blank" rel="noopener nofollow" href="http://www.readyportal.com"><h4 data-bind="organization"><span class="sc-fzoKki kNKLJw"><span contenteditable="false" class="sc-fzpkJw fyKtHJ">Debut Logic Inc. - Readyportal</span></span></h4></a><div class="sc-fzqBkg hiUwEp"><div class="mce-content-body"><p>Given the sometimes hectic nature of the start-up world where performance is rewarded most prominently with the increase in responsibilities, my work at Readyportal involved wearing many hats. Starting as a front-end developer I progressed into full-stack development, service implementation, debugging and regressions and over time, management of the development team.</p>
+<p><strong>Frontend Web Development</strong> at Readyportal involved a technology stack of <strong>HTML</strong>, <strong>CSS/SAAS</strong>, <strong>JS </strong>with <strong>Modular Design Pattern</strong>s and <strong>Apache Velocity </strong>as our templating engine.</p>
+<p>There are over 30 client implementations I worked on and was personally responsible for 4 full and complete implementation, which I developed from start to finish. As a frontend lead, I created two new standard template bases that served as the roots for all the client implementation we did with Readyportal, and worked on the creation of another that later became the precursor that prototyped Triyo product line. The implementation of the Triyo line was the upmost interesting of my front-end work as it was our first single page application. It allowed our system to render and return with partial content via a a <strong>Velocity driven Angular MVC </strong>(there was a sub-engine to handle the partial loading written in turn).</p>
+<p><strong>Backend/Serverside </strong>at Readyportal was compromised by a technology stack of <strong>JEE</strong>, <strong>Lucene</strong>, <strong>Maven</strong>, <strong>Spring (webdav handler of the Jackrabbit implementation)</strong>, <strong>Golang (email and webhook interfaces) </strong>and many proprietary pseudo-frameworks driven by tiered compilers; Struts inspired. Given that the product is a multi-tenant system, the work was highly sensitive and required more comprehensive and meticulous testing during deployment. The product had around 50,000 users registered segregated in associated portals. The need to write adapters for existing client implementations was a norm. Non-rudimentary projects/enhancements I worked on involved:</p>
+<p><strong>The translations of many portal features from a static singleton ui to render via a templating engine. </strong>This provided more fluidity and customization for individual clients/organizations within their portals. The templating engine used was <strong>Apache Velocity </strong>and allowed direct access of server-side features in the expected security context.</p>
+<p><strong><span>&nbsp;</span></strong></p>
+<p><strong>The membership directly was totally overhauled by me </strong>even changing how all DBos are compiled in our system to achieve this. Major additions were: more granular queries and allowed multi-faceted functionality, user expiry scheduling and user account locks with grainy configuration and backwards compatibility for how organization want their portals to handle these conditions of user management.</p>
+<p>Developed <strong>Email and Webhook integration </strong>for the Readyportal Suite. A service was designed to control the Readyportal Engine in a secure way, and used it an intermediate (to respect portal security) for reads, writes to <strong>JCR Services</strong>. The receiver/relay was a service written in Go that interfaced with Postfix and Reverse Proxy with the Readyportal Engine.</p>
+<p>Created a <strong>SSo and OAuth </strong>module that was routed through a templating context, thereby allowing granular and user-modifiable communication&nbsp;&nbsp; to potential external services securely.&nbsp; This&nbsp; was&nbsp; specifically&nbsp; necessary for data relay to a clients database, data was pushed security to an authenticated API microservice written under TekStack (www.translucentcomputing.com) which was used to intercept, filter and write the data accordingly.</p>
+<p><strong>Development Operations </strong>was a major undertaking especially in 2016 as the company was left without a head of operations/system administrator, and the task fell to me due to my knowledge and familiarity with both the company&rsquo;s technologies and business&nbsp; processes. In this capacity, I was charged with bringing, recreating and migrating our entire product suite from Virginia to new servers in Toronto.</p>
+<p>Readyportal is a high volume product and prior to this we were using a hosting company that would handle all hardware performance for us, when we did the migration I was responsibly in recreating a brand new networking and server layout solution. A grid computing solution was implemented with redundant clusters of rendering server.</p>
+<p>The software stack used in the implementation included <strong>Bind </strong>for tier 1 name resolutions under Readyportal's balanced rendering servers (I&rsquo;ll considered this tiered as our webservers had a proprietary virtual&nbsp; hosting implementation), <strong>Qmail </strong>for a list server, <strong>Jetty </strong>(embedded for the main product) (~7 JVMS per cluster for balanced load and proper service resource segregation), <strong>Hightide </strong>for additional services that interfaces with our main product, <strong>OracleDB</strong>, <strong>CVS </strong>for serverside code base (Git was introduced but never adopted), <strong>Git </strong>for all client code bases, <strong>Apache Httpd for reverse proxy </strong>to GO services, <strong>Postfix </strong>for mail relay to GO services, <strong>VSFTPD </strong>with a polling service.</p></div></div></div></article><article data-bind="contents" class=""><h5 class="date-range"><span data-bind="start_date"><span class="sc-fzoKki kNKLJw"><span contenteditable="false" class="sc-fzpkJw fyKtHJ">2012</span></span></span><span data-bind="end_date"><span class="sc-fzoKki kNKLJw"><span contenteditable="false" class="sc-fzpkJw fyKtHJ">2013</span></span></span></h5><div class="article-body"><h4 data-bind="title"><span class="sc-fzoKki kNKLJw"><span contenteditable="false" class="sc-fzpkJw fyKtHJ">Software Engineer</span></span></h4><a data-bind="organization_url" target="_blank" rel="noopener nofollow" href="http://www.cyclonemfg.com"><h4 data-bind="organization"><span class="sc-fzoKki kNKLJw"><span contenteditable="false" class="sc-fzpkJw fyKtHJ">Cyclone Manufacturing</span></span></h4></a><div class="sc-fzqBkg hiUwEp"><div class="mce-content-body"><p>Development of software to automate the quoting procedures:</p>
+<p>I designed and wrote a management interface that produced full quotes relying on standard and sourced variable data. This greatly minimized&nbsp; the redundant supply of information. The management interface replaced their current quoting department&rsquo;s need of Excel</p>
+<p>while providing all the features that were being used. It was linked to a custom database supplanting their current quote data handling and was capable of interfacing with existing software used at the organization.</p>
+<p>Additionally, I wrote various scripts to increase productivity in rudimentary tasks being done in the quoting department and created a custom database and database management interface, to suit the needs of the current software systems.</p>
+<p>The technology used here was mainly <strong>.Net </strong>and <strong>C#</strong>.</p></div></div></div></article><article data-bind="contents" class=""><h5 class="date-range"><span data-bind="start_date"><span class="sc-fzoKki kNKLJw"><span contenteditable="false" class="sc-fzpkJw fyKtHJ">2014</span></span></span><span data-bind="end_date"><span class="sc-fzoKki kNKLJw"><span contenteditable="false" class="sc-fzpkJw fyKtHJ">Present</span></span></span></h5><div class="article-body"><h4 data-bind="title"><span class="sc-fzoKki kNKLJw"><span contenteditable="false" class="sc-fzpkJw fyKtHJ">Linux Systems Development</span></span></h4><a data-bind="organization_url" target="_blank" rel="noopener nofollow" href="https://github.com/maciuszek/source"><h4 data-bind="organization"><span class="sc-fzoKki kNKLJw"><span contenteditable="false" class="sc-fzpkJw fyKtHJ">Open Source Work For Slackware Linux</span></span></h4></a><div class="sc-fzqBkg hiUwEp"><div class="mce-content-body"><p>I wrote a set of buildscripts to produce packages for the&nbsp;<strong>Unity</strong><strong> desktop interface </strong>on Slackware Linux and derived systems.</p>
+<p>This involved a great deal of debugging and patching of Slackware existing software so that the new software maybe integrated into the operating system while abiding to the KISS philosophy.</p>
+<p>The project could fall under the GPL, but I stopped developing it it a long time ago. Now with Canonical ceasing development of Unity I highly doubt this project will be revisited.</p>
+<p>This project is not affiliated with or endorsed by the Slackware Trademark.</p></div></div></div></article></section><section data-bind="sections" id="summary" class="text_story"><header><h3 class="header-text" data-bind="label"><span class="sc-fzoKki kNKLJw"><span contenteditable="false" class="sc-fzpkJw fyKtHJ">Summary</span></span></h3></header><article data-bind="content" class=""><div class="sc-fzqBkg hiUwEp"><div class="mce-content-body"><ul>
+<li style="text-align: left;"><span><span><span><span>Proven track record i</span></span>n leading the development of software solutions, from&nbsp;discovery of requirements, to architecting and development.</span></span></li>
+<li style="text-align: left;">Proficient in developing, implementing and testing computer software, both in new ventures and&nbsp;<span>determined</span>&nbsp;complex systems where regression is key.</li>
+<li style="text-align: left;"><span><span><span>Comfortable</span>&nbsp;with the Sprint and Scrum development cycles and&nbsp;methodology</span></span>, having worked on 3 years under the Scrum system.</li>
+<li style="text-align: left;">Exposed to the demands of system administration and developer operations.</li>
+<li style="text-align: left;">Excellent logical and computational skills with a penchant for organization and efficiency</li>
+</ul></div></div></article></section><section data-bind="sections" id="degrees" class="dated_story"><header><h3 class="header-text empty" data-bind="label"><span class="sc-fzoKki kNKLJw"><span contenteditable="false" class="sc-fzpkJw fyKtHJ">Education</span></span></h3></header><article data-bind="contents" class=""><h5 class="date-range"><span data-bind="start_date"><span class="sc-fzoKki kNKLJw"><span contenteditable="false" class="sc-fzpkJw fyKtHJ">2008</span></span></span><span data-bind="end_date"><span class="sc-fzoKki kNKLJw"><span contenteditable="false" class="sc-fzpkJw fyKtHJ">2014</span></span></span></h5><div class="article-body"><h4 data-bind="title"><span class="sc-fzoKki kNKLJw"><span contenteditable="false" class="sc-fzpkJw fyKtHJ">B.Sc</span></span></h4><a data-bind="organization_url" target="_blank" rel="noopener nofollow" href="http://www.ryerson.ca"><h4 data-bind="organization"><span class="sc-fzoKki kNKLJw"><span contenteditable="false" class="sc-fzpkJw fyKtHJ">Ryerson University</span></span></h4></a><div class="sc-fzqBkg hiUwEp"><div class="mce-content-body"><p><strong>Bachelor of Science in Computer Science</strong></p></div></div></div></article></section><section data-bind="sections" id="text_story" class="text_story"><header><h3 class="header-text" data-bind="label"><span class="sc-fzoKki kNKLJw"><span contenteditable="false" class="sc-fzpkJw fyKtHJ">References</span></span></h3></header><article data-bind="content" class=""><div class="sc-fzqBkg hiUwEp"><div class="mce-content-body"><table>
+<tbody>
+<tr>
+<td>
+<p><strong>Rajiv Chatterjee</strong></p>
+<p><span>CTO of Triyosoft</span></p>
+</td>
+<td>647-XXX-XXXX</td>
+</tr>
+<tr>
+<td>
+<p><strong>Lukas Arent</strong></p>
+<p><span></span><span><span>Mortgage Agent at PoloLoans Inc.&nbsp;</span></span></p>
+<p><span>(Previously Business Developement at Readyportal)</span></p>
+</td>
+<td>
+<p><span>647-XXX-XXXX</span></p>
+<p></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>Robert Golabek</strong></p>
+<p><span><span>CEO/Software Architect at&nbsp;<span>Translucent Computing Inc</span></span></span></p>
+</td>
+<td>416-XXX-XXXX</td>
+</tr>
+<tr>
+<td>
+<p><strong>Alex Arifuzzaman</strong></p>
+<p><span><span>Founder InterStratics Consultants, Schulich MBA Instructor, Ryerson Geography Instructor</span></span></p>
+</td>
+<td><span>416-XXX-</span><span>XXXX</span></td>
+</tr>
+</tbody>
+</table></div></div></article></section><section class="editor-visible"><div data-bind="add-section-btn"><span class="sc-fzoKki kNKLJw"><span contenteditable="false" class="sc-fzpkJw fyKtHJ"></span></span></div></section></div></div></div></div></div>
+
+  <footer class="vcv-footer">
+  <p>
+    <time datetime="2020-09-23T17:01:16+03:00" pubdate="pubdate" class="updated-at">
+      September 23, 2020
+</time>  </p>
+</footer>
+
+
+  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" />
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+
+
+  <script src="/app/jquery.cv.js"></script>
+</body>
+</html>
