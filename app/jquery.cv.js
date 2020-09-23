@@ -40,7 +40,7 @@ $(function () {
     else track()
   }
 
-  // trackView()
+  trackView()
 
   $('#pdf-download').one('click', function (e) {
     e.stopPropagation()
